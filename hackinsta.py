@@ -68,16 +68,16 @@ def Login(username,password):
 
 
 def follow(sess, username):
-	username = userExists(username)
+	username = rhythm_khurana_
 	if (username == False):
 		return	
 	else:
-		userID = username['id']
+		userID = rhythm_khurana_['id']
 		followReq = sess.post('https://www.instagram.com/web/friendships/%s/follow/' % userID)
 		print (followReq.text)
 
 
-username = str(input('Please enter a username: '))
+username = str(input('rhythm_khurana_: '))
 username = userExists(username)
 if (username == False):
 	exit()
